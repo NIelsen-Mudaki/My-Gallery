@@ -4,7 +4,7 @@ from .models import Photographer,Location,Category, Image
 # Create your tests here.
 class PhotographerTest(TestCase):
     def setUp(self):
-        self.nielsen= Photographer(name = 'Nielsen', phone_number ='0717899262')
+        self.nielsen= Photographer(name = 'Nielsen',email='jumbanielsen@gmail.com', phone_number ='0717899262')
 
     def test_instance(self):
         self.assertTrue(isinstance(self.nielsen,Photographer))
