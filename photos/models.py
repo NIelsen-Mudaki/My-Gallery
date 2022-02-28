@@ -14,7 +14,7 @@ class Photographer(models.Model):
     def delete_photographer(self):
         self.delete()   
     @classmethod
-    def display_photographers(cls):
+    def display_photographer(cls):
         photographers= Photographer.objects.all()
         for photographer in photographers:
             return photographer

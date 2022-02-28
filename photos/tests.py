@@ -21,3 +21,10 @@ class PhotographerTest(TestCase):
         self.nielsen.delete_photographer()
         photographers = Photographer.objects.all()
         self.assertTrue(len(photographers) == 0)
+
+    #testing displaying model
+    def test_display(self):
+        self.nielsen.save_photographer()
+        self.nielsen.display_photographer()
+        photographers = Photographer.objects.all()
+        self.assertTrue(len(photographers) > 0)
