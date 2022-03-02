@@ -31,7 +31,7 @@ As a user of the application you should be able to:
 * pip virtualenv
 * Cloning In your terminal:
 
-$ git clone
+$ git clone: <https://github.com/NIelsen-Mudaki/My-Gallery.git>
 $ cd My-Gallery
 Running the Application
 Creating the virtual environment
