@@ -40,21 +40,14 @@ $ python3.6 -m venv --without-pip virtual
 $ source virtual/bin/env
 Installing Django.
 (virtual)$ pip install django==1.11
-Confirm that you do have Django.
-To achieve this, activate your python shell and run python3.6 on your terminal.
-Under your shell input this code:
->>> import django
->>> django.get_version()
-'1.11.5'
+
 Start a Django server.
 (virtual)$ python3.6 manage.py runserver
 Performing system checks...
 
 System check identified no issues (0 silenced).
-September 28, 2018 - 12:01:08
 Django version 1.11, using settings 'gallery.settings'
-Starting development server at:
-<http://127.0.0.1:8000/>
+Starting development server at:<http://127.0.0.1:8000/>
 Quit the server with CONTROL-C.
 
 ## Technologies Used
