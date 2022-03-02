@@ -15,8 +15,16 @@ def search_results(request):
         searched_photos = Image.search_by_category(search_term)
         message = f"{search_term}"
 
-        return render(request, 'all-photo/search.html',{"message":message,"photos": searched_photos})
+        return render(request, 'all-photos/search.html',{"message":message,"photos": searched_photos})
 
     else:
         message = "You haven't searched for any term"
         return render(request, 'all-photos/search.html',{"message":message})
+
+
+def article(request,image_id):
+    try:
+        image = Image.objects.get(id = image_id)
+    except DoesNotExist:
+        raise Http404()
+    return render(request,"all-photos/photo.html", {"image":image})
