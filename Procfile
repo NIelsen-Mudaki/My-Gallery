@@ -1,1 +1,1 @@
-web: gunicorn nielgallery.wsgi --log-file 
+web: gunicorn --pythonpath nielgallery.wsgi --log-file -
