@@ -69,7 +69,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'n^_gf_5zj*5k5p@p#xyqcjul0-ib&3jl*cp3p1fpl)i+&riwlc'
+SECRET_KEY = 'n^_gf_5zj*5k5p@p#xyqcjul0-ib&3jl*cp3p1fpl)i+&riwlc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
